@@ -1,0 +1,21 @@
+# 수집한 데이터는 절대 레포에 들어가면 안 된다
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+*.jsonl
+logs/
+.tracker/
+data/
+
+.env
+.env.*
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.idea/
+*.egg-info/
+settings.json

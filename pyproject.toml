@@ -1,0 +1,22 @@
+[project]
+name = "crumb-tracker"
+version = "0.1.0"
+description = "Traces what you actually did while vibe coding, and where you got stuck."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+crumb = "crumb.cli:main"
+crumb-record = "crumb.record:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["crumb"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+crumb = ["../store/*.sql"]
